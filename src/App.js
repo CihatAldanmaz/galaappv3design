@@ -22,8 +22,8 @@ function App() {
   return (
     <div className = "maindiv">
      
-          <div className = "playerscomponent" players = {this.jsonexample}>
-        <PlayerList/>
+          <div className = "playerscomponent">
+        <PlayerList  players = {this.jsonexample}/>
         </div>
         <div className = "fieldcomponent">
       <Field />
