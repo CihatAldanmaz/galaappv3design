@@ -4,12 +4,20 @@ import Field from "./Field"
 import './style/style.css'
 
 export default class App extends Component {
+  state = {
+    players:{
+      player1:{
+        name:'muslera',
+        position:'GK'
+      }
+    }
+  }
   render() {
     return (
       <div className = "maindiv">
      
           <div className = "playerscomponent">
-        <PlayerList/>
+        <PlayerList players={this.state.players}/>
         </div>
         <div className = "fieldcomponent">
       <Field />
